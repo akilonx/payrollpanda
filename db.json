@@ -1,6 +1,7 @@
 {
     "biker": {
         "bikerItems": [{
+                "id": 1,
                 "fullName": "123",
                 "email": "aaa",
                 "city": "bbb",
@@ -9,6 +10,7 @@
                 "registrationDay": 1509494400000
             },
             {
+                "id": 2,
                 "fullName": "abc",
                 "email": "fff",
                 "city": "eee",

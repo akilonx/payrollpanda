@@ -32,8 +32,25 @@ class Bikers {
         return output.join(', ');
     }
 
+    removeBiker(a) {
+        for (let i = 0; i < this.bikerItems.length; i++) {
+            if (this.bikerItems[i].id == a) {
+                this.bikerItems.splice(i, 1);
+                break;
+            }
+        }
+        this.run();
+    }
+
     submitForm() {
+        let id = this.bikerItems.sort(function(a, b) {
+            return a.id - b.id || a.name.localeCompare(b.name);
+        });
+
+        let lastId = id[id.length - 1];
+
         this.biker = {
+            id: lastId.id + 1,
             fullName: document.querySelector('#full-name').value || '',
             email: document.querySelector('#email').value || '',
             city: document.querySelector('#city').value || '',
@@ -120,7 +137,7 @@ class Bikers {
                     <div class="cell cell-2"></div>
                 </div>
                 ${this.bikerItems.map(a => `
-                    <div class="row">
+                    <div class="row" id="biker-${a.id}">
                         <div class="cell cell-1">${a.fullName}</div>
                         <div class="cell cell-1">${a.email}</div>
                         <div class="cell cell-2">${a.city}</div>
@@ -140,6 +157,14 @@ class Bikers {
         form.addEventListener('click', ()=> {
             this.submitForm();
         });
+
+        this.bikerItems.map((a) => {
+            const row = document.querySelector('#biker-'+ a.id);
+            row.addEventListener('click', ()=> {
+                this.removeBiker(a.id);
+            });
+    
+        })
 
     }
 };
