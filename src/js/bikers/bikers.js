@@ -26,7 +26,7 @@ class Bikers {
 
     getCheckedData(a) {
         let output = [];
-        for (var i = 0; i < a.length; i++) {
+        for (let i = 0; i < a.length; i++) {
             output.push(a[i].value);
         }
         return output.join(', ');
