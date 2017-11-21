@@ -1,0 +1,27 @@
+{
+    "name": "payrollpanda",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev-server": "json-server --watch db.json --routes routes.json",
+        "dev-client": "webpack-dev-server --inline",
+        "test": "mocha-webpack --require ignore-styles --webpack-config webpack.config.test.js \"src/js/**/*.spec.js\" || true"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "babel-preset-es2015": "^6.24.1",
+        "chai": "^4.1.2",
+        "css-loader": "^0.28.7",
+        "ignore-styles": "^5.0.1",
+        "json-server": "^0.12.1",
+        "mocha": "^4.0.1",
+        "mocha-webpack": "^1.0.1",
+        "node-sass": "^4.7.1",
+        "sass-loader": "^6.0.6",
+        "style-loader": "^0.19.0",
+        "webpack": "^3.8.1",
+        "webpack-dev-server": "^2.9.4"
+    }
+}

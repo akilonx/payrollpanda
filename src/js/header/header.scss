@@ -1,0 +1,120 @@
+@import "../../scss/variables.scss";
+#help-title {
+    border: 1px solid #ddd;
+    background: #f3f3f3;
+    padding: 10px 20px;
+}
+
+#help-content {
+    border: 1px solid #ddd;
+    overflow-y: hidden;
+    max-height: 500px;
+    /* approximate max height */
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+#help-content>p {
+    padding: 10px 20px;
+}
+
+#help-content.hide {
+    padding: 0;
+    max-height: 0;
+}
+
+#help-content .fa {
+    font-size: 110px;
+    display: inline-block;
+    float: left;
+    color: #999;
+    padding-right: 10px;
+}
+
+#help-title a {
+    display: block;
+    float: right;
+}
+
+.wrapper.breadcrumb {
+    padding: 0px 180px;
+}
+
+.breadcrumb .fa {
+    font-size: 20px;
+}
+
+.breadcrumb ol {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-bottom: 1rem;
+    list-style: none;
+    border-radius: .25rem;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    color: #868e96;
+    content: ">";
+}
+
+.iconguide {
+    background: #ddd;
+    color: #999999;
+}
+
+.iconguide ul {
+    list-style: none;
+}
+
+.iconguide li {
+    float: left;
+    text-align: left;
+    display: inline-block;
+    min-width: 50px;
+    margin-right: 50px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.iconguide .fa {
+    font-size: 50px;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+}
+
+.iconguide li>.light {
+    font-size: 14px;
+    padding-top: 5px;
+    font-weight: normal;
+    display: inline-block;
+}
+
+.iconguide li .strong {
+    font-size: 22px;
+    line-height: 20px;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.wrapper.navbar {
+    border-bottom: 1px solid black;
+    padding: 30px 180px 15px
+}
+
+.navbar .fa {
+    color: #34a00f;
+    margin-right: 10px;
+}
+
+.navbar .logo {
+    font-size: 20px;
+    font-weight: bold;
+}

@@ -1,0 +1,35 @@
+{
+    "biker": {
+        "bikerItems": [{
+                "fullName": "123",
+                "email": "aaa",
+                "city": "bbb",
+                "rideInGroup": "ccc",
+                "dayOfWeek": "Sat",
+                "registrationDay": 1509494400000
+            },
+            {
+                "fullName": "abc",
+                "email": "fff",
+                "city": "eee",
+                "rideInGroup": "ddd",
+                "dayOfWeek": "Sun",
+                "registrationDay": 1511049600000
+            }
+        ],
+        "rideInGroup": [
+            "Always",
+            "Sometimes",
+            "Never"
+        ],
+        "dayOfWeek": [
+            "Sun",
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat"
+        ]
+    }
+}

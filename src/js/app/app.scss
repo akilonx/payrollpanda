@@ -1,0 +1,155 @@
+@import "../../scss/variables.scss";
+*,
+ ::after,
+ ::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $payrollpanda-font-family;
+    background: $payrollpanda-background-color;
+    color: $text-color;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    text-align: left;
+    color: black;
+    margin: 0 0 30px;
+    padding: 0;
+}
+
+a {
+    color: $link-text-color;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.wrapper {
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.wrapper>* {
+    flex: 1 100%;
+}
+
+.header {}
+
+.footer {}
+
+.main {
+    text-align: left;
+    background: deepskyblue;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.fleft {
+    float: left;
+}
+
+.fright {
+    float: right;
+}
+
+.aside-1 {
+    text-align: left;
+}
+
+.aside-2 {
+    text-align: left;
+}
+
+@media all and (min-width: 600px) {
+    .aside {
+        flex: 1;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .main {
+        flex: 3 0px;
+    }
+    .aside-1 {
+        order: 1;
+    }
+    .main {
+        order: 2;
+    }
+    .aside-2 {
+        order: 3;
+    }
+    .footer {
+        order: 4;
+    }
+    .wrapper {
+        padding: 10px 180px;
+    }
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+
+/*spacer*/
+
+.spacer-5 {
+    margin-top: 5px;
+    clear: both;
+}
+
+.spacer-10 {
+    margin-top: 10px;
+    clear: both;
+}
+
+.spacer-15 {
+    margin-top: 15px;
+    clear: both;
+}
+
+.spacer-20 {
+    margin-top: 20px;
+    clear: both;
+}
+
+.spacer-25 {
+    margin-top: 25px;
+    clear: both;
+}
+
+.spacer-30 {
+    margin-top: 30px;
+    clear: both;
+}
+
+.spacer-35 {
+    margin-top: 35px;
+    clear: both;
+}
+
+.spacer-50 {
+    margin-top: 50px;
+    clear: both;
+}
+
+.spacer-100 {
+    margin-top: 100px;
+    clear: both;
+}
+
+.strong {
+    font-weight: bold;
+}
