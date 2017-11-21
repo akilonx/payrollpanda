@@ -48,7 +48,7 @@ class Bikers {
 
         if (this.bikerItems.length > 0) {
             let id = this.bikerItems.sort(function(a, b) {
-                return a.id - b.id || a.name.localeCompare(b.name);
+                return a.id - b.id;
             });
             lastId = id[id.length - 1];
         } else {
