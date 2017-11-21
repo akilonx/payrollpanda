@@ -117,6 +117,7 @@ class Bikers {
                     <div class="cell cell-1">Ride in group</div>
                     <div class="cell cell-1">Day of the week</div>
                     <div class="cell cell-1">Registration day</div>
+                    <div class="cell cell-2"></div>
                 </div>
                 ${this.bikerItems.map(a => `
                     <div class="row">
@@ -126,6 +127,7 @@ class Bikers {
                         <div class="cell cell-1">${a.rideInGroup}</div>
                         <div class="cell cell-1">${a.dayOfWeek}</div>
                         <div class="cell cell-1">${("0" + new Date(a.registrationDay).getDate()).slice(-2) + '/' + ("0" + (new Date(a.registrationDay).getMonth() + 1)).slice(-2) + '/' +  new Date(a.registrationDay).getFullYear()}</div>
+                        <div class="cell cell-2"><span class="delete fa fa-trash-o"></span></div>
                     </div>
                 `).join('')}
                 </div>

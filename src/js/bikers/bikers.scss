@@ -3,13 +3,6 @@
     margin-bottom: 1rem;
 }
 
-.form-group span.instructions {
-    color: #999;
-    display: inline-block;
-    padding-top: 5px;
-    font-size: $payrollpanda-font-size - 2;
-}
-
 .form-submit {
     text-align: right;
 }
@@ -307,4 +300,26 @@ input[type=radio] {
 
 .text-input:focus {
     border-color: #34a00f;
+}
+
+.form-group span.instructions {
+    color: #999;
+    padding-top: 5px;
+    font-size: $payrollpanda-font-size - 2;
+}
+
+.instructions {
+    display: none;
+}
+
+#full-name:hover+.instructions {
+    display: block;
+}
+
+.table .delete {
+    visibility: hidden;
+}
+
+.table .row:hover .delete {
+    visibility: visible;
 }
