@@ -43,11 +43,18 @@ class Bikers {
     }
 
     submitForm() {
-        let id = this.bikerItems.sort(function(a, b) {
-            return a.id - b.id || a.name.localeCompare(b.name);
-        });
 
-        let lastId = id[id.length - 1];
+        let lastId = {};
+
+        if (this.bikerItems.length > 0) {
+            let id = this.bikerItems.sort(function(a, b) {
+                return a.id - b.id || a.name.localeCompare(b.name);
+            });
+            lastId = id[id.length - 1];
+        } else {
+            lastId = { id: 0 };
+        }
+
 
         this.biker = {
             id: lastId.id + 1,
